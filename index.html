@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial Html</title>
+    <style>
+         table, th, td {
+        border:1px solid black;
+         }
+    </style>
+</head>
+<body>
+  <table style="width: 500px;">
+    <thead>
+      <tr>
+        <th>Precio</th>
+        <th>Producto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> Hola beats</td>
+        <td> Gratis</td>
+      </tr>
+      <tr>
+        <td> Hola guapos</td>
+        <td> 10$</td>
+      </tr>
+      <tr>
+        <td> Hola bestias!</td>
+        <td> 20$</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <td></td>
+      <td>Total; 30$</td>
+    </tfoot>
+  </table>
+    <h1>Titulo para buscar en la web h1 </h1>
+    <h2>Subtitulo h2</h2>
+    <h3>Sus Subtitulo h3</h3>
+    <h4>Usando h4 !!!</h4>
+    <h5>MI nombre es Pablo</h5>
+    <h6>Y estoy de vuelta en html</h6>
+    <p>este es un párrafo</p>
+    <p>Este es un segundo párrafo</p>
+    <hr>  <!-- hr sirve para hacer una linea
+    que divide nuestra pagina -->
+    <h2>Subtítulo</h2>
+    <p>bla bla bla</p> <br>
+    <p>Esta es la <span style="color:blue">palabra</span>
+      que quiero resaltar</p> <!--En este caso span sirve para hacer una seleccion
+    silenciosa para mas adelante modificarlo, usamos style="color:"para darle un color-->
+    <a target="_blank" href="https://www.google.com"> Ir a google</a> <!--a es un hipervinculo para llevar
+    a otra pagina web-->
+    <br>
+    <img src="IMG/foto1.png" width="" alt="Imagen de clones Star Wars" height=""/>
+    <!--img src incerta una imagen ya sea en linea o en el dispositivo 
+      (si es del dispositivo debe estar en la misma carpeta); width: ancho; height: altura
+    alt: da una descripcion de la imagen por si no se puede cargar lka imagen-->
+    <form>
+      <label for="nombre"> Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre"/>
+    </form> 
+    <br>
+    <form action="/formulario" method="post"> <!--value="" coloca un mensaje por defecto-->
+      <label for="apellido"> Apellido</label>
+      <input type="text" id="apellido" name="apellido" placeholder="Apellido"/>
+      <br>
+      <!--La etiqueta form sirve para hacer un formulario;
+         label hace que a la par aparezca el dato que queramos que ingresen;
+        for="" hace que podamos asignar un id para usarlo mas tarde y hacer que al clickear se diriga al form junto id;
+        input permite colocar el cuadro donde ingresamos los datos;
+        id="" llama al id que asignamos
+        type="" permite cambiar el tipo de burbuja;
+        name="" permite guardar los datos en un servidor y mandar las respuestas
+        placeholder hace que dentro de la burbuja aparezca un texto que se borra al escribir-->
+        <br>
+        <label for="comentario" >Comentario</label>
+        <br>
+      <textarea placeholder="Ingrese comentario" name="comentario" id="comentario" cols="30" rows="10"></textarea>
+      <!--textarea no usa value="" para el valor por defecto, si queremos eso se coloca el valor por defecto 
+      antes del cierre de textvalue-->  
+      <br>
+      <input type="submit"/> <br>
+
+      <!--Submit hace que todos los campos se envien al servidor al ser pulsado-->
+      <!--textarea sirve para hacer un burbuja de texto el cual podemos ingresar mas texto y configurar su area;
+      cols="" es para agregar numero de columnas;
+      rows=""es para agregar numero de lineas-->
+      <button type="submit">Enviar</button>
+      
+    </form> 
+    <ul> <!--Lista no ordenada; li list item-->
+      <li>ELemento 1</li>
+      <li>ELemento 2</li>
+      <li>ELemento 3</li>
+      <li>ELemento 4</li>
+    </ul>
+    <ol> <!--Lista ordenada; li list item-->
+      <li value="50">ELemento 1</li> <!--Value sirve para agregar el valor inicial-->
+      <li>ELemento 2</li>
+      <li>ELemento 3</li>
+      <li>ELemento 4</li> <br>
+      <li> <!--Si deseas eliminar el numero molesto puedes qauitar li-->
+        <ol> <br>
+            <li style="list-style-type: lower-alpha;">Elemento modificado 1</li>
+            <li style="list-style-type: lower-alpha;">Elemento modificado 2</li>
+            <li style="list-style-type: lower-alpha;">Elemento modificado 3</li>
+        </ol>
+      </li>
+    </ol>
+  
+</body>
+</html>
+
